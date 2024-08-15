@@ -1,5 +1,21 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
+/* Styles for devices with screens smaller than 768px (like mobile phones) */
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .navbar {
+      flex-direction: column; /* Stack navbar items vertically */
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
  
 * {
     margin: 0;
@@ -313,5 +329,56 @@ h5 {
 
 #reset-btn:hover {
     background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 100%;
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .container {
+        border-radius: 20px;
+        box-shadow: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container form {
+        padding: 20px;
+    }
+
+    .toggle-container {
+        width: 100%;
+        left: 0;
+        border-radius: 20px;
+    }
+
+    .toggle {
+        width: 100%;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #reveal-btn, #reset-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+.reveal-image {
+    width: 100%;
+    height: auto;
 }
 
